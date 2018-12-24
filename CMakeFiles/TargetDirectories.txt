@@ -1,0 +1,3 @@
+/home/tahara/ohehe/CMakeFiles/rebuild_cache.dir
+/home/tahara/ohehe/CMakeFiles/Bookstore.dir
+/home/tahara/ohehe/CMakeFiles/edit_cache.dir
