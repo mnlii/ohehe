@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Bookstore
+# Target rules for targets named bookstore
 
 # Build rule for target.
-Bookstore: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Bookstore
-.PHONY : Bookstore
+bookstore: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bookstore
+.PHONY : bookstore
 
 # fast build rule for target.
-Bookstore/fast:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/build
-.PHONY : Bookstore/fast
+bookstore/fast:
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/build
+.PHONY : bookstore/fast
 
 CommandReader.o: CommandReader.cpp.o
 
@@ -129,7 +129,7 @@ CommandReader.o: CommandReader.cpp.o
 
 # target to build an object file
 CommandReader.cpp.o:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/CommandReader.cpp.o
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/CommandReader.cpp.o
 .PHONY : CommandReader.cpp.o
 
 CommandReader.i: CommandReader.cpp.i
@@ -138,7 +138,7 @@ CommandReader.i: CommandReader.cpp.i
 
 # target to preprocess a source file
 CommandReader.cpp.i:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/CommandReader.cpp.i
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/CommandReader.cpp.i
 .PHONY : CommandReader.cpp.i
 
 CommandReader.s: CommandReader.cpp.s
@@ -147,7 +147,7 @@ CommandReader.s: CommandReader.cpp.s
 
 # target to generate assembly for a file
 CommandReader.cpp.s:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/CommandReader.cpp.s
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/CommandReader.cpp.s
 .PHONY : CommandReader.cpp.s
 
 Controller/BookController.o: Controller/BookController.cpp.o
@@ -156,7 +156,7 @@ Controller/BookController.o: Controller/BookController.cpp.o
 
 # target to build an object file
 Controller/BookController.cpp.o:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Controller/BookController.cpp.o
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Controller/BookController.cpp.o
 .PHONY : Controller/BookController.cpp.o
 
 Controller/BookController.i: Controller/BookController.cpp.i
@@ -165,7 +165,7 @@ Controller/BookController.i: Controller/BookController.cpp.i
 
 # target to preprocess a source file
 Controller/BookController.cpp.i:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Controller/BookController.cpp.i
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Controller/BookController.cpp.i
 .PHONY : Controller/BookController.cpp.i
 
 Controller/BookController.s: Controller/BookController.cpp.s
@@ -174,7 +174,7 @@ Controller/BookController.s: Controller/BookController.cpp.s
 
 # target to generate assembly for a file
 Controller/BookController.cpp.s:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Controller/BookController.cpp.s
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Controller/BookController.cpp.s
 .PHONY : Controller/BookController.cpp.s
 
 Controller/UserController.o: Controller/UserController.cpp.o
@@ -183,7 +183,7 @@ Controller/UserController.o: Controller/UserController.cpp.o
 
 # target to build an object file
 Controller/UserController.cpp.o:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Controller/UserController.cpp.o
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Controller/UserController.cpp.o
 .PHONY : Controller/UserController.cpp.o
 
 Controller/UserController.i: Controller/UserController.cpp.i
@@ -192,7 +192,7 @@ Controller/UserController.i: Controller/UserController.cpp.i
 
 # target to preprocess a source file
 Controller/UserController.cpp.i:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Controller/UserController.cpp.i
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Controller/UserController.cpp.i
 .PHONY : Controller/UserController.cpp.i
 
 Controller/UserController.s: Controller/UserController.cpp.s
@@ -201,7 +201,7 @@ Controller/UserController.s: Controller/UserController.cpp.s
 
 # target to generate assembly for a file
 Controller/UserController.cpp.s:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Controller/UserController.cpp.s
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Controller/UserController.cpp.s
 .PHONY : Controller/UserController.cpp.s
 
 DB/BLL.o: DB/BLL.cpp.o
@@ -210,7 +210,7 @@ DB/BLL.o: DB/BLL.cpp.o
 
 # target to build an object file
 DB/BLL.cpp.o:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/DB/BLL.cpp.o
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/DB/BLL.cpp.o
 .PHONY : DB/BLL.cpp.o
 
 DB/BLL.i: DB/BLL.cpp.i
@@ -219,7 +219,7 @@ DB/BLL.i: DB/BLL.cpp.i
 
 # target to preprocess a source file
 DB/BLL.cpp.i:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/DB/BLL.cpp.i
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/DB/BLL.cpp.i
 .PHONY : DB/BLL.cpp.i
 
 DB/BLL.s: DB/BLL.cpp.s
@@ -228,7 +228,7 @@ DB/BLL.s: DB/BLL.cpp.s
 
 # target to generate assembly for a file
 DB/BLL.cpp.s:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/DB/BLL.cpp.s
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/DB/BLL.cpp.s
 .PHONY : DB/BLL.cpp.s
 
 DB/Book.o: DB/Book.cpp.o
@@ -237,7 +237,7 @@ DB/Book.o: DB/Book.cpp.o
 
 # target to build an object file
 DB/Book.cpp.o:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/DB/Book.cpp.o
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/DB/Book.cpp.o
 .PHONY : DB/Book.cpp.o
 
 DB/Book.i: DB/Book.cpp.i
@@ -246,7 +246,7 @@ DB/Book.i: DB/Book.cpp.i
 
 # target to preprocess a source file
 DB/Book.cpp.i:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/DB/Book.cpp.i
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/DB/Book.cpp.i
 .PHONY : DB/Book.cpp.i
 
 DB/Book.s: DB/Book.cpp.s
@@ -255,7 +255,7 @@ DB/Book.s: DB/Book.cpp.s
 
 # target to generate assembly for a file
 DB/Book.cpp.s:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/DB/Book.cpp.s
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/DB/Book.cpp.s
 .PHONY : DB/Book.cpp.s
 
 DB/Refer.o: DB/Refer.cpp.o
@@ -264,7 +264,7 @@ DB/Refer.o: DB/Refer.cpp.o
 
 # target to build an object file
 DB/Refer.cpp.o:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/DB/Refer.cpp.o
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/DB/Refer.cpp.o
 .PHONY : DB/Refer.cpp.o
 
 DB/Refer.i: DB/Refer.cpp.i
@@ -273,7 +273,7 @@ DB/Refer.i: DB/Refer.cpp.i
 
 # target to preprocess a source file
 DB/Refer.cpp.i:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/DB/Refer.cpp.i
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/DB/Refer.cpp.i
 .PHONY : DB/Refer.cpp.i
 
 DB/Refer.s: DB/Refer.cpp.s
@@ -282,7 +282,7 @@ DB/Refer.s: DB/Refer.cpp.s
 
 # target to generate assembly for a file
 DB/Refer.cpp.s:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/DB/Refer.cpp.s
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/DB/Refer.cpp.s
 .PHONY : DB/Refer.cpp.s
 
 DB/User.o: DB/User.cpp.o
@@ -291,7 +291,7 @@ DB/User.o: DB/User.cpp.o
 
 # target to build an object file
 DB/User.cpp.o:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/DB/User.cpp.o
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/DB/User.cpp.o
 .PHONY : DB/User.cpp.o
 
 DB/User.i: DB/User.cpp.i
@@ -300,7 +300,7 @@ DB/User.i: DB/User.cpp.i
 
 # target to preprocess a source file
 DB/User.cpp.i:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/DB/User.cpp.i
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/DB/User.cpp.i
 .PHONY : DB/User.cpp.i
 
 DB/User.s: DB/User.cpp.s
@@ -309,7 +309,7 @@ DB/User.s: DB/User.cpp.s
 
 # target to generate assembly for a file
 DB/User.cpp.s:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/DB/User.cpp.s
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/DB/User.cpp.s
 .PHONY : DB/User.cpp.s
 
 Reporter/Command.o: Reporter/Command.cpp.o
@@ -318,7 +318,7 @@ Reporter/Command.o: Reporter/Command.cpp.o
 
 # target to build an object file
 Reporter/Command.cpp.o:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Reporter/Command.cpp.o
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Reporter/Command.cpp.o
 .PHONY : Reporter/Command.cpp.o
 
 Reporter/Command.i: Reporter/Command.cpp.i
@@ -327,7 +327,7 @@ Reporter/Command.i: Reporter/Command.cpp.i
 
 # target to preprocess a source file
 Reporter/Command.cpp.i:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Reporter/Command.cpp.i
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Reporter/Command.cpp.i
 .PHONY : Reporter/Command.cpp.i
 
 Reporter/Command.s: Reporter/Command.cpp.s
@@ -336,7 +336,7 @@ Reporter/Command.s: Reporter/Command.cpp.s
 
 # target to generate assembly for a file
 Reporter/Command.cpp.s:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Reporter/Command.cpp.s
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Reporter/Command.cpp.s
 .PHONY : Reporter/Command.cpp.s
 
 Reporter/Finance.o: Reporter/Finance.cpp.o
@@ -345,7 +345,7 @@ Reporter/Finance.o: Reporter/Finance.cpp.o
 
 # target to build an object file
 Reporter/Finance.cpp.o:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Reporter/Finance.cpp.o
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Reporter/Finance.cpp.o
 .PHONY : Reporter/Finance.cpp.o
 
 Reporter/Finance.i: Reporter/Finance.cpp.i
@@ -354,7 +354,7 @@ Reporter/Finance.i: Reporter/Finance.cpp.i
 
 # target to preprocess a source file
 Reporter/Finance.cpp.i:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Reporter/Finance.cpp.i
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Reporter/Finance.cpp.i
 .PHONY : Reporter/Finance.cpp.i
 
 Reporter/Finance.s: Reporter/Finance.cpp.s
@@ -363,7 +363,7 @@ Reporter/Finance.s: Reporter/Finance.cpp.s
 
 # target to generate assembly for a file
 Reporter/Finance.cpp.s:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Reporter/Finance.cpp.s
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Reporter/Finance.cpp.s
 .PHONY : Reporter/Finance.cpp.s
 
 Reporter/Reporter.o: Reporter/Reporter.cpp.o
@@ -372,7 +372,7 @@ Reporter/Reporter.o: Reporter/Reporter.cpp.o
 
 # target to build an object file
 Reporter/Reporter.cpp.o:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Reporter/Reporter.cpp.o
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Reporter/Reporter.cpp.o
 .PHONY : Reporter/Reporter.cpp.o
 
 Reporter/Reporter.i: Reporter/Reporter.cpp.i
@@ -381,7 +381,7 @@ Reporter/Reporter.i: Reporter/Reporter.cpp.i
 
 # target to preprocess a source file
 Reporter/Reporter.cpp.i:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Reporter/Reporter.cpp.i
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Reporter/Reporter.cpp.i
 .PHONY : Reporter/Reporter.cpp.i
 
 Reporter/Reporter.s: Reporter/Reporter.cpp.s
@@ -390,7 +390,7 @@ Reporter/Reporter.s: Reporter/Reporter.cpp.s
 
 # target to generate assembly for a file
 Reporter/Reporter.cpp.s:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/Reporter/Reporter.cpp.s
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/Reporter/Reporter.cpp.s
 .PHONY : Reporter/Reporter.cpp.s
 
 main.o: main.cpp.o
@@ -399,7 +399,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -408,7 +408,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -417,7 +417,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/Bookstore.dir/build.make CMakeFiles/Bookstore.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/bookstore.dir/build.make CMakeFiles/bookstore.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -427,7 +427,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Bookstore"
+	@echo "... bookstore"
 	@echo "... edit_cache"
 	@echo "... CommandReader.o"
 	@echo "... CommandReader.i"
