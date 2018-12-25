@@ -18,7 +18,6 @@ void load_command(const char* fpath){
     CommandReader cmd;
     cmd.NextCommand("su root sjtu");
 
-
     char ord[201];
     while(fgets(ord, 200, fptr)){
         ord[strlen(ord) - 1] = 0;
@@ -39,7 +38,6 @@ int main()
     User usr;
     usr.addUser("root", "sjtu", "name", 7);
 #endif
-
 
 
     if(exist_file("command.txt")){

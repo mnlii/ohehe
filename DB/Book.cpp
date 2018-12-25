@@ -37,6 +37,7 @@ void Book::upref(){
     int j;
     if(!bkdb -> old_t.empty()){
         int len = static_cast<int>(bkdb -> old_t.size()), i;
+
         for(i = 0; i < len; i++){
             r_ISBN -> rmreference(bkdb -> dlist[i].ISBN, bkdb -> old_t[i]);
             r_ISBN -> addreference(bkdb -> dlist[i].ISBN, bkdb -> new_t[i]);
@@ -140,7 +141,7 @@ bool Book::modify(char *ISBN, char *name, char *author, char *keyword, double pr
     ins.store = rm.store;
 
 
-    off_t offt = bkdb -> update(reinterpret_cast<const char (&)[20]>(*oldKey), ins);
+    bkdb -> update(reinterpret_cast<const char (&)[20]>(*oldKey), ins);
 
     r_ISBN -> addreference(ISBN, bkdb -> lst_query);
     r_name -> addreference(name, bkdb -> lst_query);
@@ -165,7 +166,6 @@ bool Book::modify(char *ISBN, char *name, char *author, char *keyword, double pr
 bool Book::sell_buy(const char *ISBN, int num) {
     vector<off_t> qres = r_ISBN -> getref(const_cast<char *>(ISBN));
     data now = bkdb -> getdata(qres[0]);
-
     if(now.store + num < 0) {
         return false;
     }
@@ -195,6 +195,7 @@ vector<Book::data> Book::get_name(char *name) {
     vector<data> res;
     int i, len = qret.size();
     for(i = 0; i < len; i++){
+  //      printf("%d\n", res[i].name);
         res.push_back(bkdb -> getdata(qret[i]));
     }
     return res;

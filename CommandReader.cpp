@@ -209,7 +209,7 @@ bool CommandReader::show(int argc, char **argv) {
         int i;
         vector<string> qres = bc.show(argc, argv, flg);
         sort(qres.begin(),qres.end());
-        qres.erase(unique(qres.begin(), qres.end()), qres.end());
+//        qres.erase(unique(qres.begin(), qres.end()), qres.end());
 
         for(i = 0; i < qres.size(); i++){
             printf("%s\n", qres[i].c_str());

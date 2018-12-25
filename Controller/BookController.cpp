@@ -180,7 +180,6 @@ vector<string> BookController::show(int argc, char* argv[], bool& flg) {
         res.push_back(conv(qres[i]));
     }
 
-    std::sort(res.begin(), res.end(), cmp);
     return res;
 }
 

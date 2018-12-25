@@ -12,7 +12,7 @@
 #include <algorithm>
 using std::vector;
 
-#define BLOCK 64
+#define BLOCK 512
 
 /*
  * DT is the data type of your data;
@@ -343,6 +343,8 @@ off_t BLL<KT, DT>::insert(const KT &key, const DT &data) {
             memcpy(now.data + loc, &data, sizeof(DT));
             now.top++;
             res = now.loc + (size_t) &(((node*)0)->data) + sizeof(DT) * loc;
+
+
             if(now.top == BLOCK){
                 node nxt, tmp;
                 nxt.loc = meta_h.slot;
